@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "faker": "^4.1.0",
+    "pixelmatch": "^4.0.2",
     "puppeteer": "^1.8.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
