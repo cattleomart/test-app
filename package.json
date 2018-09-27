@@ -15,5 +15,8 @@
     "eject": "react-scripts eject",
     "debug": "set NODE_ENV=debug&&npm test",
     "test": "jest"
+  },
+  "devDependencies": {
+    "react-devtools": "^3.4.0"
   }
 }

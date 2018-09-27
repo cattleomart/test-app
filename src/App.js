@@ -13,7 +13,11 @@ class App extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    this.setState({ complete: true })
+    if(document.cookie.includes('JWT')){
+      this.setState({complete:true})
+    }
+
+   
     document.cookie = `firstName=${this.state.firstName}`
      
   };
@@ -30,19 +34,19 @@ class App extends Component {
             Welcome to React
           </h1>
 
-          <nav className="navbar" role="navigation" data-testid="navbar">
+          <nav className="navbar" data-testid="navbar">
             <ul>
               <li className="nav-li" data-testid="nav-li">
-                <a href="#">Home</a>
+                <a href="http://google.com">Home</a>
               </li>
               <li className="nav-li" data-testid="nav-li">
-                <a href="#">About</a>
+                <a href="http://google.com">About</a>
               </li>
               <li className="nav-li" data-testid="nav-li">
-                <a href="#">Skills</a>
+                <a href="http://google.com">Skills</a>
               </li>
               <li className="nav-li" data-testid="nav-li">
-                <a href="#">Works</a>
+                <a href="http://google.com">Works</a>
               </li>
             </ul>
           </nav>
